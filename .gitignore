@@ -1,0 +1,12 @@
+*.jpg
+*.zip
+*.pth
+*.txt
+.ipynb_checkpoints/
+.DS_Store
+m1_images
+m2_images
+__pycache__
+jetsim_googlecolab/__pycache__/
+jetsim_local/__pycache__/
+gym-donkeycar/
