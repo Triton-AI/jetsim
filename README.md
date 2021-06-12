@@ -5,7 +5,7 @@ To install from scratch, follow the [*develop* branch README.md](https://github.
 
 ---
 
-![](lidar.PNG)
+![](lidar.png)
 
 ---
 
