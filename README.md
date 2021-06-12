@@ -1,5 +1,7 @@
-# Jetsim Google Colab
+# Jetsim Workshop
 **Summary:** This branch of Jetsim will show you how to use NVIDIA's Jetracer framework within the Google Colaboratory environment: Collect and train data from the [Donkeycar simulator](https://github.com/tawnkramer/gym-donkeycar/releases) and build an autonomous driving model that can race in virtual tournaments.
+
+![](jetsim.png)
 
 
 ### Watch Jetsim perform for the first time in the finals of the DIY Robocar Virtual Tournament
@@ -23,22 +25,11 @@ Installation & Training Process
 
 ---
 
-### **Step 1** - Git clone **jetsim-google-colab** branch to your new folder:
+### **Step 1** - Git clone **jetsim** branch to your new folder:
 
-    git clone --single-branch --branch jetsim-google-colab https://github.com/abritten/tritonai-jetsim.git
+      git clone https://github.com/Triton-AI/jetsim.git
 
-    cd jetsim
-
----
-
-### **Step 2** - Create and "jetsim" environment with miniconda and prepare the Donkeycar simulator for training:
-
-- Install [miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html), if you have not done so in the past.
-  
-
-      conda create -n jetsim python=3.8
-
-      conda activate jetsim
+      cd jetsim
 
       pip install docopt pyserial opencv-python pygame==2.0.0.dev10 matplotlib ipycanvas
 
@@ -60,7 +51,7 @@ Installation & Training Process
 
 - Go to **jetsim-local** directory.
 
-      cd ../jetsim-local
+      cd ../jetsim_local
 
 ### Finally download latest [Donkeycar Simulator](https://github.com/tawnkramer/gym-donkeycar/releases) for you specific machine (Mac, PC, or Linux)
 
