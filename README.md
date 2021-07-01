@@ -1,4 +1,7 @@
 # Jetsim Workshop
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Triton-AI/jetsim.git/workshop)
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/Triton-AI/jetsim.git/workshop
 **Summary:** This branch of Jetsim will show you how to use NVIDIA's Jetracer framework within the Google Colaboratory environment: Collect and train data from the [Donkeycar simulator](https://github.com/tawnkramer/gym-donkeycar/releases) and build an autonomous driving model that can race in virtual tournaments.
 
 ![](jetsim.png)
