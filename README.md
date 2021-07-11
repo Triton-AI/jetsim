@@ -34,6 +34,8 @@ Installation & Training Process
 - `conda activate donkey`
 - `pip install jupyter-labs`
 - `pip install ipywidgets`
+- `pip install matplotlib`
+- `pip install ipycanvas`
 
 ---
 
