@@ -29,10 +29,11 @@ Installation & Training Process
 
 - `git clone https://github.com/Triton-AI/jetsim.git`
 - `cd jetsim`
+- `git checkout cosmosc11`
 
 ### **Step 2** - Activate environment and install necessary packages
 - `conda activate donkey`
-- `pip install jupyter-labs`
+- `pip install jupyterlab`
 - `pip install ipywidgets`
 - `pip install matplotlib`
 - `pip install ipycanvas`
@@ -43,7 +44,7 @@ Installation & Training Process
 
 - Make sure you are in the correct directory.
 - When you type in the command `pwd` on the terminal, you should see
-`'~/projects/jetracer_jetsim/jetsim'`
+`'/home/ucsd/projects/jetracer_jetsim/jetsim'`
 - In terminal, type in `jupyter-notebook`. This should redirect you to a web-browser.
 - Click into the **jetsim_local** folder and open **JETSIM_collect_images**
 
@@ -61,7 +62,7 @@ Installation & Training Process
 - Transfer **jetsim_googlecolab** folder into your **Google drive** main directory.
 ### !!!
 
-- Transfer image folder into **Google Drive/jetsim_googlecolab/SIM_road_following_A** directory folder.
+- Transfer image zipped file into **Google Drive/jetsim_googlecolab/SIM_road_following_A** directory folder.
 
 ### !!!
 - Install [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) for your **Google drive**.
