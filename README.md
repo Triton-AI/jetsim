@@ -1,7 +1,4 @@
 # Jetsim Workshop
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Triton-AI/jetsim.git/workshop)
-.. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/Triton-AI/jetsim.git/workshop
 **Summary:** This branch of Jetsim will show you how to use NVIDIA's Jetracer framework within the Google Colaboratory environment: Collect and train data from the [Donkeycar simulator](https://github.com/tawnkramer/gym-donkeycar/releases) and build an autonomous driving model that can race in virtual tournaments.
 
 ![](jetsim.png)
@@ -20,80 +17,49 @@
 Installation & Training Process
 ===
 
+### **Step 0** - Make a folder for this repository branch on your computer and enter into the folder:
 
-### [Tutorial video]()
-
-### **Step 0** - Make a folder for this repository branch on your computer:
-
-- cd into the new folder via terminal.
-
----
-
-### **Step 1** - Git clone **jetsim** branch to your new folder:
-
-      git clone https://github.com/Triton-AI/jetsim.git
-
-      cd jetsim
-
-      pip install docopt pyserial opencv-python pygame==2.0.0.dev10 matplotlib ipycanvas
-
-      conda install -c anaconda ipykernel
-
-      python -m ipykernel install --user --name=jetsim
-
-
-- Git clone **gym-donkeycar** interface repository.
-
-      git clone https://github.com/tawnkramer/gym-donkeycar
-
-
-- Install **gym-donkeycar** interface with ONLY ONE of these lines of code (Machine specific)
-  
-      pip install -e .[gym-donkeycar] #Windows ONLY
-      pip install -e gym-donkeycar #Mac ONLY
-      python3 -m pip install -e .[gym-donkeycar] --user #linux ONLY
-
-- Go to **jetsim-local** directory.
-
-      cd ../jetsim_local
-
-### Finally download latest [Donkeycar Simulator](https://github.com/tawnkramer/gym-donkeycar/releases) for you specific machine (Mac, PC, or Linux)
+- `cd ~/projects`
+- `mkdir jetracer_jetsim`
+- `cd jetracer_jetsim`
 
 ---
 
+### **Step 1** - Git clone **jetsim** branch to your new folder
+
+- `git clone https://github.com/Triton-AI/jetsim.git`
+- `cd jetsim`
+
+### **Step 2** - Activate environment and install necessary packages
+- `conda activate donkey`
+- `pip install jupyter-labs`
+- `pip install ipywidgets`
+
+---
+
+### **Step 3** - Collect data LOCALLY on your computer/simulator:
+
+- Make sure you are in the correct directory.
+- When you type in the command `pwd` on the terminal, you should see
+`'~/projects/jetracer_jetsim/jetsim'`
+- In terminal, type in `jupyter-notebook`. This should redirect you to a web-browser.
+- Click into the **jetsim_local** folder and open **JETSIM_collect_images**
+
+#### We will be using method 2 for the COSMOS Program
+
+#### Follow the instructions in the notebook
 
 
-### **Step 3.1** - Collect data LOCALLY on your computer/simulator:
-
-- Use [VScode](https://code.visualstudio.com/) IDE to operate all Jupyter Notebooks from this point on. Or use [Anaconda Navaigator](https://docs.anaconda.com/anaconda/install/) with Jupyter Labs IDE to operate all Jupyter Notebooks. Either one will work as long as you activate your "jetsim" environment for each Notebook. 
-- Navigate to **jetsim_local** folder with your IDE (side menu that navigates folder directories)
-- Operate **JETSIM_collect_images.ipynb** to collect data.
-  - NOTE: Activate "jetsim" environment for Jupyter Notebook.
-  
-### **Step 3.2** - Rename data (for **Method 1**):
-- Rename all collected data with post processing. 
-
-      python postprocess_images.py
-
-- Verify **m1_images** folder is cleaned up with correct data.
-- Compress images folder:
-      
-      zip -r m1_images.zip images
-
-### If **Method 2** was used:
 - Verify **m2_images** folder is cleaned up with correct data
-- Compress images folder:
-      
-      zip -r m2_images.zip images
 
 ---
 
 ### **Step 4.1** - Trasfer and prepare **Google Drive** for Jetsim Colab training:
 
-- Trasnfer **jetsim_googlecolab** folder into your **Google drive** main directory.
+- Transfer **jetsim_googlecolab** folder into your **Google drive** main directory.
 ### !!!
 
-- Transfer (compressed) **zip** folder into **Google Drive/jetsim_googlecolab/SIM_road_following_A** directoy folder.
+- Transfer image folder into **Google Drive/jetsim_googlecolab/SIM_road_following_A** directory folder.
 
 ### !!!
 - Install [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) for your **Google drive**.
