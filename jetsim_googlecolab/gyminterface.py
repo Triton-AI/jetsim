@@ -27,15 +27,15 @@ DEFAULT_GYM_CONFIG = {
     "fov" : 80, 
     "fish_eye_x" : 0.0, 
     "fish_eye_y" : 0.0, 
-    "img_w" : 160, 
-    "img_h" : 120, 
+    "img_w" : 224, 
+    "img_h" : 224, 
     "img_d" : 3, 
     "img_enc" : 'JPG', 
-    "offset_x" : 0.0, 
-    "offset_y" : 0.0, 
-    "offset_z" : 0.0, 
-    "rot_x" : 0.0,
-    # "rot_y": 180,
+    "offset_x" : 0.0, #sides
+    "offset_y" : 2.0, #height #Jetsim 2.0
+    "offset_z" : 0.0, #forward
+    "rot_x" : 20.0,   #tilt #Jetsim 0.0
+    #"rot_y": 180,    #rotate
 
     'scene_name': 'generated_track',
     'host': '127.0.0.1',
@@ -243,13 +243,14 @@ class GymInterface(Component, SDClient):
     def send_camera_config(self, config_dict):
         """
         config_dict: a dictionary, e.g.
-        {"img_w" : 160, 
-        "img_h" : 120, 
+        {"img_w" : 224, 
+        "img_h" : 224, 
         "img_d" : 3, 
         "img_enc" : 'JPG', 
-        "offset_x" : 0.0, 
-        "offset_y" : 3, 
-        "offset_z" : 1.0, 
+        "offset_x" : 0.0,
+        "offset_y" : 2.0, 
+        "offset_z" : 0.0,
+        "rot_x" : 20.0,  
         "rot_x" : 0.0,}
         """
         print("Gym Interface: Sending custom camera config...")

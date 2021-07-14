@@ -17,7 +17,7 @@ def onClick(event):
     
     print(newName)
     
-    os.rename(imageName,('./m1_images/' + newName)) #images, lane_change, lane_cone_avoid. I made difernet folders for each training scenario. 
+    os.rename(imageName,('./keyboard_images/' + newName)) #images, lane_change, lane_cone_avoid. I made difernet folders for each training scenario. 
     
     counter = counter + 1
     print(str(counter) + " image(s) renamed")
@@ -29,7 +29,7 @@ import os
 import glob
 from datetime import datetime
 
-list = glob.glob("./m1_images/*.jpg") #images, lane_change, lane_cone_avoid
+list = glob.glob("./keyboard_images/*.jpg") #images, lane_change, lane_cone_avoid
 list.sort()
 print(str(len(list)) + " images total")
 

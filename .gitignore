@@ -4,9 +4,8 @@
 *.txt
 .ipynb_checkpoints/
 .DS_Store
-m1_images
-m2_images
-m3_images
+keyboard_images
+clickable_images
 __pycache__
 jetsim_googlecolab/__pycache__/
 jetsim_local/__pycache__/
