@@ -42,19 +42,19 @@ Installation & Training Process
 - This should redirect you to a web-browser.
 - Click into the **jetsim_vm** folder and open **JETSIM_collect_images**
 
-#### We will be using method 2 for the COSMOS Program
+#### We will be using method 1 clickable for the COSMOS Program
 
 ![](./jetsim_vm/resources/joystick.png)
 
 #### Follow the instructions in the notebook
 
 
-- Verify **m2_images** folder is cleaned up with correct data
-- cd into m2_images and check for anyhting that is not a jpg.
+- Verify **clickable_images** folder is cleaned up with correct data
+- cd into clickable_images and check for anyhting that is not a jpg.
 - `ls -a`
 - remove anything not jpg.
 - zip the folder or skip if already zipped from notebook:
-- `zip -r m2_images.zip m2_images`
+- `zip -r clickable_images.zip clickable_images`
 
 
 ---
