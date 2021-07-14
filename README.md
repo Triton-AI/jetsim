@@ -87,7 +87,20 @@ Installation & Training Process
 - Calibrate as necessary to improve model performance.
 
 FINISHED
-===
+
+---
+
+### **EXTRA Step 6** - Submit model to Triton AI and complete feedback form.
+
+Please submit your best working model so we may evaluate your performance. 
+
+- email to:      *triton-ai@eng.ucsd.edu*
+- name format:   *lastname-steergain-throttlegain.pth*
+- example:       *smith-1.0-0.9.pth*
+
+### [Please take our feedback survey form so we can improve our Jetsim workshop!](https://forms.gle/AfcyjebSZK97hMSf6)
+
+---
 
 **Jetracer Terminology:**
 
