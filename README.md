@@ -14,7 +14,6 @@ Installation & Training Process
 - `cd ~/projects`
 - `mkdir tritonai_jetsim`
 - `cd tritonai_jetsim`
-- 
 ---
 
 ### **Step 1** - Git clone **jetsim** branch to your new folder
@@ -29,6 +28,7 @@ Installation & Training Process
 - `pip install ipywidgets`
 - `pip install matplotlib`
 - `pip install ipycanvas`
+- `pip install pygame==2.0.0.dev10`
 
 ---
 
