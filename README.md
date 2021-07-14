@@ -36,7 +36,7 @@ Installation & Training Process
 
 - Make sure you are in the correct directory.
 - `pwd` 
-- on the terminal, you should see`'/home/ucsd/projects/jetracer_jetsim/jetsim'`
+- on the terminal, you should see`'/home/ucsd/projects/tritonai_jetsim/jetsim'`
 - Now run this command in the terminal:
 - `jupyter-lab` 
 - This should redirect you to a web-browser.
