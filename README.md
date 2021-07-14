@@ -12,9 +12,9 @@ Installation & Training Process
 ### **Step 0** - Make a folder for this repository branch on your VM computer and enter into the folder:
 
 - `cd ~/projects`
-- `mkdir jetracer_jetsim`
-- `cd jetracer_jetsim`
-
+- `mkdir tritonai_jetsim`
+- `cd tritonai_jetsim`
+- 
 ---
 
 ### **Step 1** - Git clone **jetsim** branch to your new folder
